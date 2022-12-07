@@ -3,7 +3,7 @@ import Statistics from 'components/Statistics';
 import FeedbackOptions from 'components/FeedbackOptions';
 import Section from 'components/Section';
 
-class App extends Component {
+export class App extends Component {
   constructor() {
     super();
     this.state = {
@@ -60,4 +60,4 @@ class App extends Component {
   }
 }
 
-export default App;
+// export default App;
