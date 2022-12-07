@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
 import { FeedbackBtn } from './FeedbackOption.styled';
 
-const FeedbackOptions = props => {
-  const { options, onLiveFeedback } = props;
+const FeedbackOptions = ({ options, onLiveFeedback }) => {
   return (
     <FeedbackBtn name={options} type="button" onClick={onLiveFeedback}>
       {options}

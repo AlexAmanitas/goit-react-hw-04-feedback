@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
 import Notification from 'components/Notification';
 
-const Statistics = props => {
-  const { good, neutral, bad, total, positivePercentage } = props;
+const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   if (good + neutral + bad === 0)
     return <Notification message="There is no feedback" />;
   return (
