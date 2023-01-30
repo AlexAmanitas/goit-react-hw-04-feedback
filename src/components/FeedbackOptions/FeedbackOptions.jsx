@@ -19,10 +19,8 @@ const FeedbackOptions = ({ options, onLiveFeedback }) => {
 };
 
 FeedbackOptions.propTypes = {
-  props: PropTypes.shape({
-    options: PropTypes.string.isRequired,
-    onLiveFeedback: PropTypes.func.isRequired,
-  }),
+  options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  onLiveFeedback: PropTypes.func.isRequired,
 };
 
 export default FeedbackOptions;
